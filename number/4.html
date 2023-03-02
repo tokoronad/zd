@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let num1 = +prompt("1 number","");
+let num2 = +prompt("2 number","");
+function randomInteger(min, max) {
+  let rand = (min/max) + Math.random() * (max*min - min);
+  while (rand<num1 | rand>num2){
+  if (rand > num2){
+    rand = rand/num2;
+  }
+  if (rand < num1){
+    rand = rand * num1;
+  }}
+  return Math.round(rand);
+}
+for(let i = 0; i < 20; i++){
+alert( randomInteger(num1, num2) );
+}
+</script>
