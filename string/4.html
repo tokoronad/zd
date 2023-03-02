@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let string = prompt("введите количество денег","");
+function extractCurrencyValue(str){
+	if(!str) return str;
+	let str1 = str.slice(0, 1);
+	if (str1.includes("$")){
+	return str.slice(1, str.lenght);
+	}else {return str}
+};
+alert(extractCurrencyValue(string));
+</script>

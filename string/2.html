@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let text = prompt("введите текст","");
+function checkSpam(str) {
+if (!str) return "unexpected";
+let string = str.toLowerCase();
+if (string.includes('xxx') | string.includes('viagra')){
+  return true;
+} else{
+  return false;
+}
+}
+alert(checkSpam(text));
+</script>

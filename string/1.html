@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let stroka = prompt("введи слово","");
+function ucFirst(str) {
+  if (!str) return str;
+  let sym1 = str[0].toUpperCase();
+  let str2 = (sym1 + str.slice(1));
+  return str2;
+}
+
+alert( ucFirst(stroka) ); // Вася
+</script>

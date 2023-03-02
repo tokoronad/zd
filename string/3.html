@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+let string = prompt("введите текст","");
+let mxlgt = +prompt("введите максимальное количество символов","");
+function truncate(str, maxlenght){
+	let dots = "";
+	let dotsnumber = str.length - maxlenght;
+	let strslice = str.slice(0, maxlenght);
+	if (dotsnumber > 0) {
+		for(let i = 0; i < dotsnumber; i++){
+		dots = dots + ".";
+		}
+	return strslice + dots;
+	} else{
+	return str;
+	}
+};
+alert(truncate(string, mxlgt));
+</script>
